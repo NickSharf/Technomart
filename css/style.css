@@ -1,0 +1,11 @@
+body {
+  font-family: PT Sans;
+}
+h1, .popular {
+  font-family: cuprum;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
