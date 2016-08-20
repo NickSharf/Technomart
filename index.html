@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header index-header">
       <section class="header-title">
         <div class="container">
           <a class="shop-logo">Техномарт</a>
@@ -150,8 +150,8 @@
               <div class="image-wrapper">
                 <img src="img/bfg-3000.jpg" width="127" height="89" alt="Перфоратор BOSCH BFG 3000">
                 <div class="product-item-hover">
-                  <label for="item-in-cart" class="buy active-btn">Купить</label>
-                  <label for="new-bookmark" class="bookmark active-btn">В закладки</label>
+                  <label for="item-in-cart" class="buy">Купить</label>
+                  <label for="new-bookmark" class="bookmark">В закладки</label>
                 </div>
               </div>
               <p>Перфоратор BOSCH BFG 3000</p>
@@ -285,14 +285,14 @@
           <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
         </div>
         <div class="button-area">
-          <button type="submit" class="send-btn btn-red ">Отправить</button>
+          <button type="submit" class="feedback-submit-btn btn-red ">Отправить</button>
         </div>
         </form>
         <label class="close-cross" for="feedback-btn"></label>
     </div>
     <input type="checkbox" name="interactive-map" id="interactive-map">
     <div class="map-wrapper">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412409!2d30.320894616222446!3d59.938796869047735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1456566656272" width="940" height="446" frameborder="5" style="border:0" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412409!2d30.320894616222446!3d59.938796869047735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1456566656272" width="940" height="446"></iframe>
       <label class="close-cross" for="interactive-map"></label>
     </div>
     <input type="checkbox" name="cart-wrapper" id="item-in-cart">
@@ -304,6 +304,7 @@
       </div>
       <label class="close-cross" for="item-in-cart"></label>
     </div>
+    <input type="checkbox" name="new-bookmark" id="new-bookmark">
     <footer>
       <section class="footer-top">
         <div class="container">

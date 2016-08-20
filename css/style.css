@@ -53,6 +53,9 @@ header {
   font-family: "Cuprum", "Arial", "sans-serif";
   height: 320px;
   color: #ffffff;
+}
+
+.index-header {
   margin-bottom: 59px;
 }
 
@@ -95,7 +98,7 @@ header {
   width: 270px;
   background-color: #293449;
   border: none;
-  padding-left: 47px;
+  padding-left: 43px;
   box-shadow: none;
   font-size: 17px;
   font-family: "Cuprum", "Arial", "serif";
@@ -314,19 +317,39 @@ header {
 }
 
 .entrance-form .user {
+  position: relative;
   width: 255px;
   background-color: #ffffff;
   text-decoration: none;
   font-size: 21px;
   line-height: 18px;
-  padding: 14px 0;
+  padding: 14px 0 14px 45px;
   margin-bottom: 10px;
   color: #000000;
 }
 
+.entrance-form .user::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/sprite.png");
+  background-position: -15px -851px;
+  left: 20px;
+}
+
+.entrance-form .user:hover::before {
+  background-position: -15px -899px;
+}
+
+.entrance-form .user:active::before {
+  background-position: -15px -851px;
+}
+
+
 .user-form .orders, .user-form .cabinet {
   width: 50%;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 18px;
   color: #32425c;
   position: relative;
@@ -347,6 +370,16 @@ header {
   width: 45px;
   height: 46px;
   background-color: #ffffff;
+  background-image: url("../img/sprite.png");
+  background-position: -1px -553px;
+}
+
+.entrance-form .exit:hover {
+  background-position: -1px -600px;
+}
+
+.entrance-form .exit:active {
+  background-position: -1px -553px;
 }
 
 .entrance-form a:hover  {
@@ -470,7 +503,6 @@ main .container {
   border-radius: 50%;
   background-color: #ffffff;
   bottom: 36px;
-
 }
 
  .slider-dot-1 {
@@ -669,6 +701,379 @@ main .container {
   margin-top: 20px;
 }
 
+main .catalog .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 59px;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  margin-right: 38px;
+}
+
+.breadcrumbs .breadcrumbs-home {
+  width: 15px;
+  height: 18px;
+  background-image: url("../img/sprite.png");
+  background-position: -15px -429px;
+}
+
+.breadcrumbs a:not(:last-of-type)::after {
+  position: absolute;
+  content: "";
+  border: 2px solid transparent;
+  border-top: 2px solid #c1c6ce;
+  border-right: 2px solid #c1c6ce;
+  width: 8px;
+  height: 8px;
+  top: 2px;
+  right: -22px;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs a:hover {
+  color: #ee3643;
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog h1 {
+  background-color: #f2f6f8;
+  padding: 29px 0px 29px 30px;
+  margin-top: 0;
+}
+
+.catalog-content {
+  display: flex;
+  width: 940px;
+}
+
+.catalog-content .filter {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-content .filter span {
+  width: 204px;
+  padding: 10px 0 10px 16px;
+  margin-bottom: 15px;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.filter-form fieldset {
+  display: flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-form fieldset:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+  margin-bottom: 22px;
+}
+.filter-form legend {
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter-form .price-filter {
+  height: 170px;
+}
+
+.filter-form fieldset .price {
+  margin-bottom: 15px;
+}
+
+.filter-form fieldset .vendors, .filter-form fieldset .power {
+  margin-bottom: 15px;
+}
+
+.filter-form .price-filter .range-filter {
+  margin-bottom: 25px;
+}
+
+.filter-form .price-filter .range-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78px;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.range-controls .scale {
+  position: relative;
+}
+
+.range-controls .scale .bar {
+
+  width: 180px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-controls .scale .toggle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: -10px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.range-controls .scale .max-toggle {
+  right: 0;
+}
+
+.filter-form .price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-form .price-controls input {
+  width: 95px;
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #f7f3ec;
+}
+
+.filter-form .filter-form-vendor input {
+  display: none;
+}
+
+.filter-form-vendor label {
+  position: relative;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: 34px;
+}
+
+.filter-form-vendor input + label::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 23px;
+  left: -34px;
+  top: -2px;
+  background-image: url("../img/sprite.png");
+  background-position: -15px -219px;
+}
+
+.filter-form-vendor input + label:hover::before {
+  background-position: -15px -272px;
+}
+
+.filter-form-vendor input:checked + label::before {
+  width: 27px;
+  background-position: -15px -325px;
+}
+
+.filter-form-vendor input:checked + label:hover::before {
+  width: 27px;
+  background-position: -15px -378px;
+}
+
+.filter-form-vendor input:disabled + label::before {
+  width: 27px;
+  opacity: 0.3;
+}
+
+.filter-form-vendor label:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.filter-form-power input {
+  display: none;
+}
+
+.filter-form-power label {
+  position: relative;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: 34px;
+  margin-bottom: 65px;
+}
+
+.filter-form-power label:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.filter-form-power label:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  left: -34px;
+  top: -3px;
+  background-image: url("../img/sprite.png");
+  background-position: -15px -1095px;
+}
+
+.filter-form-power input + label:hover::before {
+  background-position: -15px -1260px;
+}
+
+.filter-form-power input:checked + label::before {
+  background-position: -15px -1150px;
+}
+
+.filter-form-power input:checked + label:hover::before {
+  background-position: -15px -1205px;
+}
+
+.filter-form-power input:disabled + label::before {
+  opacity: 0.3;
+}
+
+.filter-form button {
+  width: 138px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter-form button:hover {
+  border: 1px solid #bdc6ca;
+  cursor: pointer;
+}
+
+.filter-form button:active {
+  border: 1px solid #ee3643;
+  cursor: pointer;
+}
+
+.content-part {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.products-sort-filter {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 38px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #f7f3ec;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.products-sort-filter span {
+  margin: 0 144px 0 16px ;
+  text-transform: uppercase;
+}
+
+.products-sort-filter .sort-toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin-right: 43px;
+}
+
+.products-sort-filter .sort-toggles a {
+  text-decoration: none;
+  border-bottom: dotted 1px #ee3643 ;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.products-sort-filter .sort-toggles a:hover {
+  color: #000000;
+  border-bottom: solid 1px #ee3643;
+}
+
+.products-sort-filter .sort-toggles a:active {
+  color: #ee3643;
+  border: none;
+}
+
+.products-sort-filter .sort-order {
+  display: flex;
+  width: 60px;
+}
+
+.products-sort-filter .sort-order a {
+  position: relative;
+  width: 30px;
+  background-color: #fff;
+}
+
+.products-sort-filter .sort-order a:after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #c6c2bd;
+}
+
+.products-sort-filter .sort-order .descend:after {
+  transform: rotate(180deg);
+}
+
+.products-sort-filter .sort-order a:hover:after {
+  border-bottom: 10px solid #000000;
+}
+
+.products-sort-filter .sort-order a:active:after {
+  border-bottom: 10px solid #ee3643;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
 .product-item {
   display: flex;
   position: relative;
@@ -682,7 +1087,15 @@ main .container {
   margin-right: 20px;
 }
 
-.product-item:nth-child(4n) {
+.products .product-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.products .product-item:not(:nth-last-child(n+4)) {
+  margin-bottom: 0;
+}
+
+.popular-products .product-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -701,7 +1114,7 @@ main .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 159px;
+  height: 170px;
   justify-content: center;
   align-items: center;
 }
@@ -779,12 +1192,13 @@ main .container {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  color: #00000;
+  color: #000000;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .product-item span {
-  padding: 13px 21px 13px 37px;
+
   font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 17px;
   line-height: 18px;
@@ -795,13 +1209,17 @@ main .container {
 }
 
 .product-item .old-price {
-  height: 22px;
+  height: 20px;
+  width: 83px;
+  padding: 8px 0px 8px 37px;
   color: #999999;
   text-decoration: line-through;
 }
 
 .product-item .actual-price {
   margin-bottom: 20px;
+  padding: 13px 21px 13px 37px;
+  margin-top: 0;
   position: relative;
   background-color: #ee3643;
   border-radius: 3px;
@@ -817,6 +1235,74 @@ main .container {
   height: 30px;
   background-color: #ee3643;
   transform: rotate(45deg);
+}
+
+.catalog-content .content-part .paginator {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 150px;
+}
+
+.paginator a {
+  width: 36px;
+  margin-right: 10px;
+  padding: 9px 0;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Pt Sans", "Arial", "sans-serif";
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.paginator .current, .paginator .current:hover, .paginator .current:active {
+  background-color: #ee3643;
+  border: none;
+  padding: 10px 0;
+  width: 38px;
+  color: #ffffff;
+}
+
+.paginator a:not(.current):hover {
+  border: 1px solid #bdc6ca;
+}
+
+.paginator a:not(.current):active {
+  border: 1px solid #ee3643;
+}
+
+.paginator .next {
+  width: 138px;
+}
+
+.perforator-about {
+  height: 261px;
+  background-color: #f2f6f8;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.perforator-about .container {
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.perforator-about h2 {
+  margin: 0;
+  font-family: "Cuprum", "Arial", "sans-serif";
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 66px 0 35px 0;
+}
+
+.perforator-about p {
+  margin: 0;
 }
 
 .popular-vendors-wrapper {
@@ -1185,13 +1671,13 @@ input[name="write-us"], input[name="interactive-map"], input[name="cart-wrapper"
   width: 100%;
 }
 
-form .button-area {
+.feedback-wrapper form .button-area {
   width: 100%;
   height: 112px;
   background-color: #f1f1f1;
 }
 
-form button {
+.feedback-wrapper form button {
   margin: 37px 80px 37px 80px;
   width: 460px;
   border: none;
@@ -1217,12 +1703,12 @@ form button {
 
 .close-cross {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
   width: 21px;
   height: 21px;
   background-image: url("../img/sprite.png");
-  background-position: -5px -1034px;
+  background-position: -15px -1044px;
 }
 
 .feedback-wrapper .close-cross, .cart-wrapper .close-cross {
@@ -1267,8 +1753,6 @@ form button {
   background-repeat: no-repeat;
   background-position: -1px 5px;
 }
-
-
 
 .cart-wrapper .button-area {
   display: flex;
