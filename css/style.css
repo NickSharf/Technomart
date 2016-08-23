@@ -1967,10 +1967,10 @@ input[name="write-us"], input[name="interactive-map"] {
 
 .close-cross {
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 10px;
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   border: none;
   background-color: transparent;
 }
@@ -1980,7 +1980,7 @@ input[name="write-us"], input[name="interactive-map"] {
   content: "";
   width: 25px;
   height: 5px;
-  top:0;
+  top: 10px;
   right: 0;
   background-color: #ee3643;
 }
@@ -1993,10 +1993,6 @@ input[name="write-us"], input[name="interactive-map"] {
 .close-cross::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-.feedback-wrapper .close-cross, .cart-wrapper .close-cross {
-  top: 20px;
 }
 
 .cart-wrapper {
