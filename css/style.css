@@ -111,6 +111,10 @@ header {
   background-color: #ca2c37;
 }
 
+.shop-logo a {
+  padding: 0 55px;
+}
+
 .header-title .search-block {
   width: 270px;
   display: -webkit-box;
@@ -2101,13 +2105,13 @@ footer {
   background-color: #32425c;
   font-family: "Cuprum", "Arial", "sans-serif";
   color: #ffffff;
-  height: 300px;
+  min-height: 300px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .footer-top .container {
-  height: 193px;
+  min-height: 193px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: start;
@@ -2120,7 +2124,11 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 63px;
+  min-height: 63px;
+}
+
+.footer-top-logo {
+  min-height: 63px;
 }
 
 .footer-top-logo a {
@@ -2129,7 +2137,7 @@ footer {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
-  padding: 17px 0;
+  padding: 17px 42px;
 }
 
 .footer-nav-list {
