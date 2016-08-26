@@ -957,7 +957,7 @@ main .breadcrumbs {
   margin-bottom: 25px;
 }
 
-.filter-form fieldset label, .filter-form fieldset label {
+.filter-form fieldset label {
   display: block;
 }
 
@@ -1071,16 +1071,19 @@ main .breadcrumbs {
 
 .filter-form-vendor input + label:hover::before {
   background-position: -15px -272px;
+  cursor: pointer;
 }
 
 .filter-form-vendor input:checked + label::before {
   width: 27px;
   background-position: -15px -325px;
+  cursor: pointer;
 }
 
 .filter-form-vendor input:checked + label:hover::before {
   width: 27px;
   background-position: -15px -378px;
+  cursor: pointer;
 }
 
 .filter-form-vendor input:disabled + label::before {
@@ -1122,14 +1125,17 @@ main .breadcrumbs {
 
 .filter-form-power input + label:hover::before {
   background-position: -15px -1260px;
+  cursor: pointer;
 }
 
 .filter-form-power input:checked + label::before {
   background-position: -15px -1150px;
+  cursor: pointer;
 }
 
 .filter-form-power input:checked + label:hover::before {
   background-position: -15px -1205px;
+  cursor: pointer;
 }
 
 .filter-form-power input:disabled + label::before {
