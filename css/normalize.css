@@ -402,15 +402,15 @@ input[type="search"]::-webkit-search-cancel-button {
 -moz-appearance: none;
 }
 
-::-webkit-input-placeholder {
+.search-block input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-::-moz-placeholder          {
+.search-block input::-moz-placeholder          {
   color: #ffffff;
 }
 
-:-ms-input-placeholder      {
+.search-block input:-ms-input-placeholder      {
   color: #ffffff;
 }
 
