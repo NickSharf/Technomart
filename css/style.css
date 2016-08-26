@@ -431,7 +431,6 @@ header {
 }
 
 .header-navigation .container {
-  flex-wrap: wrap;
   min-height: 55px;
   background-color: #32425c;
   box-shadow: 0 5px 0 #293449;
@@ -1411,7 +1410,6 @@ main .breadcrumbs {
   font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 17px;
   line-height: 18px;
-  align-self: flex-start;
   margin-left: 42px;
   text-transform: uppercase;
   cursor: pointer;
@@ -1492,12 +1490,6 @@ main .breadcrumbs {
   font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 13px;
   line-height: 24px;
-}
-
-.perforator-about .container {
-  flex-direction: column;
-  justify-content: flex-start;
-
 }
 
 .perforator-about h2 {
