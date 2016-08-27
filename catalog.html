@@ -11,28 +11,26 @@
     <header>
       <section class="header-title">
         <div class="container">
-          <div class="shop-logo">
-            <a href="index.html">Техномарт</a>
-          </div>
+            <a class="shop-logo" href="index.html">Техномарт</a>
           <form class="search-block" action="https://echo.htmlacademy.ru" method="post">
             <input type="search" name="search" id="search-form" placeholder="Поиск:">
           </form>
-          <a href="#" class="header-bookmarks make-bookmark">Закладки:<span>1</span></a>
-        <a href="#" class="header-cart item-in-cart">Корзина:<span>2</span></a>
-            <a href="#" class="header-checkout">Оформить заказ</a>
+          <a href="#" class="header-bookmarks">Закладки:<span>0</span></a>
+          <a href="#" class="header-cart item-in-cart">Корзина:<span>10</span></a>
+          <a href="#" class="header-checkout">Оформить заказ</a>
         </div>
       </section>
       <section class="header-info">
         <div class="container">
           <div class="header-info-title">
-            <p>Интернет-магазин <br> строительных материалов и инструментов для ремонта</p>
+            <p>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
           </div>
           <div class="header-contacts">
-          <a class="phone" href="#">+7 (812) 555-05-55</a>
-          <span class="adress">г. Санкт-Петербург ул. Конюшенная д. 19\8</span>
+          <span class="phone">+7 (812) 555-05-55</span>
+          <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
           <div class="entrance-form">
-            <div class="user-form">
+            <div class="user-form clearfix">
               <a class="user" href="#">Равшан Джамшутович</a>
               <a class="orders" href="#">Мои заказы</a>
               <a class="cabinet" href="#">Личный кабинет</a>
@@ -43,41 +41,41 @@
       </section>
       <nav class="header-navigation">
         <div class="container">
-          <a href="index.html">Главная</a>
-          <a href="#">Компания</a>
-          <a href="#">Каталог</a>
-          <a href="#">Новости</a>
-          <a href="#">Спецпредложения</a>
-          <a href="#">Доставка</a>
-          <a href="#">Контакты</a>
+          <a class="nav-main" href="index.html">Главная</a>
+          <a class="nav-company" href="#">Компания</a>
+          <a class="nav-catalog" href="#">Каталог</a>
+          <a class="nav-news" href="#">Новости</a>
+          <a class="nav-special" href="#">Спецпредложения</a>
+          <a class="nav-delivery" href="#">Доставка</a>
+          <a class="nav-contacts" href="#">Контакты</a>
         </div>
       </nav>
     </header>
     <main class="catalog">
-      <div class="container">
-        <section class="breadcrumbs">
+      <div class="container clearfix">
+        <section class="breadcrumbs clearfix">
             <a class="breadcrumbs-home" href="index.html"></a>
             <a href="#">Каталог</a>
             <a href="#">Инструмент</a>
-            <a href="#">Перфораторы</a>
+            <a>Перфораторы</a>
         </section>
         <h1>Перфораторы</h1>
-        <section class="catalog-content">
-          <div class="filter">
+        <section class="catalog-content clearfix">
+          <div class="filter clearfix">
             <span>Фильтр:</span>
             <form class="filter-form" action="#" method="post">
               <fieldset class="price-filter">
                 <legend class="price">Цена:</legend>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
+                <div class="range-filter clearfix">
+                  <div class="range-controls clearfix">
+                    <div class="scale clearfix">
                       <div class="bar"></div>
                       <div class="toggle min-toggle"></div>
                       <div class="toggle max-toggle"></div>
                     </div>
                   </div>
                   <div class="price-controls">
-                    <input type="text" value="0" class="min-price">-
+                    <input type="text" value="0" class="min-price">
                     <input type="text" value="30000" class="max-price">
                   </div>
                 </div>
@@ -105,8 +103,8 @@
                 <button type="submit" class="filter-btn-submit">Показать</button>
             </form>
           </div>
-          <div class="content-part">
-            <div class="products-sort-filter">
+          <div class="content-part clearfix">
+            <div class="products-sort-filter clearfix">
               <span>Сортировка:</span>
               <div class="sort-toggles">
                 <a href="#" class="price">По цене</a>
@@ -147,7 +145,7 @@
                 <div class="image-wrapper">
                   <img src="img/bfg-2000.jpg" width="127" height="89" alt="Перфоратор BOSCH BFG 2000">
                   <div class="product-item-hover">
-                    <a href="#" class="buy">Купить</a>
+                    <a href="#" class="buy modal-window-btn">Купить</a>
                     <a href="#" class="bookmark">В закладки</a>
                   </div>
                 </div>
@@ -229,7 +227,7 @@
               </article>
             </div>
             <div class="paginator">
-              <a href="#" class="page-btn current">1</a>
+              <a class="page-btn current">1</a>
               <a href="#" class="page-btn">2</a>
               <a href="#" class="page-btn">3</a>
               <a href="#" class="page-btn next">Следущая</a>
@@ -239,12 +237,12 @@
       </div>
     </main>
     <aside class="perforator-about">
-      <div class="container">
+      <div class="container clearfix">
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортименном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
     </aside>
-    <div class="cart-wrapper close-wrapper">
+    <div class="cart-wrapper close-wrapper clearfix">
       <span class="cart-wrapper-title">Товар добавлен в корзину!</span>
       <div class="button-area">
         <a href="#" class="cart-wrapper-btn btn-red">Офомить заказ</a>
@@ -253,56 +251,48 @@
       <button type="button" class="close-cross close-popup"></button>
     </div>
     <footer>
-      <section class="footer-top">
+      <section class="footer-top clearfix">
         <div class="container">
           <div class="footer-top-line">
-            <div class="footer-top-logo shop-logo">
-              <a href="index.html">Техномарт</a>
-            </div>
+            <a href="index.html" class="footer-top-logo shop-logo">Техномарт</a>
             <nav class="footer-nav">
-              <div class="footer-nav-list">
-                <a class="footer-nav-item" href="#">Компания</a>
-                <a class="footer-nav-item" href="#">Новости</a>
-                <a class="footer-nav-item" href="#">Каталог</a>
-                <a class="footer-nav-item" href="#">Доставка</a>
-                <a class="footer-nav-item" href="#">Контакты</a>
-              </div>
+              <a class="footer-nav-item" href="#">Контакты</a>
+              <a class="footer-nav-item" href="#">Доставка</a>
+              <a class="footer-nav-item" href="#">Каталог</a>
+              <a class="footer-nav-item" href="#">Новости</a>
+              <a class="footer-nav-item" href="#">Компания</a>
             </nav>
           </div>
           <div class="footer-top-info">
             <div class="footer-top-info-adress">
-              г. Санкт-Петербург ул. Конюшенная д. 9\18<br>+7 (812) 555-05-55
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55
             </div>
             <nav class="footer-top-submenu">
-              <div class="footer-top-submenu-list">
-                <a class="footer-submenu-item" href="#">Материалы</a>
-                <a class="footer-submenu-item" href="#">Техника</a>
-                <a class="footer-submenu-item" href="#">Инструмент</a>
-                <a class="footer-submenu-item" href="#">Спецпредложения</a>
-              </div>
+              <a class="footer-submenu-item" href="#">Спецпредложения</a>
+              <a class="footer-submenu-item" href="#">Инструмент</a>
+              <a class="footer-submenu-item" href="#">Техника</a>
+              <a class="footer-submenu-item" href="#">Материалы</a>
             </nav>
           </div>
         </div>
       </section>
       <section class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom-info-wrapper">
-            <div class="copyright">
+        <div class="container clearfix">
+          <div class="copyright">
               © 2010–2016 Компания «Техномарт»<br>Все права защищены
-            </div>
-            <div class="social">
-              <a href="http://www.vk.com" class="btn vk-btn"></a>
-              <a href="http://www.facebook.com" class="btn fb-btn"></a>
-              <a href="http://www.instagram.com" class="btn inst-btn"></a>
-            </div>
-            <div class="feedback">
-              Обратная связь:<br>
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="developer">
-              Разработано -<br>
-              <a href="http://www.htmlacademy.ru">htmlacademy.ru</a>
-            </div>
+          </div>
+          <div class="social">
+            <a href="http://www.vk.com" class="btn vk-btn"></a>
+            <a href="http://www.facebook.com" class="btn fb-btn"></a>
+            <a href="http://www.instagram.com" class="btn inst-btn"></a>
+          </div>
+          <div class="feedback">
+            Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="developer">
+              Разработано -
+            <a href="http://www.htmlacademy.ru">htmlacademy.ru</a>
           </div>
         </div>
       </section>
