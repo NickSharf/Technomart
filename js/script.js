@@ -7,7 +7,7 @@ var map = document.querySelector(".map-wrapper");
 var close = document.querySelectorAll(".close-popup");
 
 
-if (document.querySelectorAll(".cart-btn")) {
+if (cartbtn) {
   for (var i = 0; i < cartbtn.length; i++) {
     cartbtn[i].addEventListener("click", function(event) {
       event.preventDefault();
@@ -34,7 +34,7 @@ if (document.querySelectorAll(".cart-btn")) {
   });
 }
 
-if (document.querySelector(".feedback-btn")) {
+if (feedbackbtn) {
   feedbackbtn.addEventListener("click", function(event) {
     event.preventDefault();
     feedback.classList.add("show-wrapper");
@@ -59,7 +59,7 @@ if (document.querySelector(".feedback-btn")) {
   };
 }
 
-if (document.querySelector(".interactive-map")) {
+if (mapbtn) {
   mapbtn.addEventListener("click", function(event) {
     event.preventDefault();
     map.classList.add("show-wrapper");
