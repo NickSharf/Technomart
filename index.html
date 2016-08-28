@@ -5,15 +5,16 @@
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&subset=cyrillic" rel="stylesheet">
-    <link href="css/min-style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header index-header">
       <section class="header-title">
         <div class="container clearfix">
             <a class="shop-logo" href="index.html">Техномарт</a>
-          <form class="search-block" action="https://echo.htmlacademy.ru" method="post">
+          <form class="search-block clearfix" action="https://echo.htmlacademy.ru" method="post">
             <input type="search" name="search" id="search-form" placeholder="Поиск:">
+            <label for="search-form"></label>
           </form>
           <a href="#" class="header-bookmarks">Закладки:<span>0</span></a>
           <a href="#" class="header-cart">Корзина:<span>0</span></a>
@@ -37,13 +38,13 @@
       </section>
       <nav class="header-navigation">
         <div class="container">
-          <a class="nav-main">Главная</a>
-          <a class="nav-company" href="#">Компания</a>
-          <a class="nav-catalog" href="catalog.html">Каталог</a>
-          <a class="nav-news" href="#">Новости</a>
-          <a class="nav-special" href="#">Спецпредложения</a>
-          <a class="nav-delivery" href="#">Доставка</a>
-          <a class="nav-contacts" href="#">Контакты</a>
+          <a class="menu-current">Главная</a>
+          <a href="#">Компания</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="#">Новости</a>
+          <a href="#">Спецпредложения</a>
+          <a href="#">Доставка</a>
+          <a href="#">Контакты</a>
         </div>
       </nav>
     </header>
@@ -78,8 +79,8 @@
             </div>
           </div>
           <div class="slider-wrapper clearfix">
-            <input type="radio" name="slide-btn" id="slide-btn1" checked>
-            <input type="radio" name="slide-btn" id="slide-btn2">
+            <input type="radio" name="slide-btn" value="slide-btn1" id="slide-btn1" checked>
+            <input type="radio" name="slide-btn" value="slide-btn2" id="slide-btn2">
             <label class="slider-control slider-control-left" for="slide-btn1"></label>
             <label class="slider-control slider-control-right" for="slide-btn2"></label>
             <label class="slider-dot slider-dot-1" for="slide-btn1"></label>
@@ -122,17 +123,17 @@
             </div>
           </div>
         </section>
-        <section class="popular-products clearfix">
-          <div class="popular-products-title">
-            <span class="popular products">Популярные товары:</span>
+        <section class="products clearfix">
+          <div class="popular-title">
+            <span class="popular">Популярные товары:</span>
             <a class="btn-red" href="#">Все популярные товары</a>
           </div>
-          <div class="popular-products-wrapper">
+          <div class="products-wrapper">
             <article class="product-item">
               <div class="image-wrapper">
                 <img src="img/bfg-9000.jpg" width="184" height="81" alt="Перфоратор BOSCH BFG 9000">
                 <div class="product-item-hover">
-                  <a href="cart.html" class="buy">Купить</a>
+                  <a href="cart-form.html" class="buy">Купить</a>
                   <a href="bookmarks.html" class="bookmark">В закладки</a>
                 </div>
               </div>
@@ -144,7 +145,7 @@
               <div class="image-wrapper">
                 <img src="img/bfg-3000.jpg" width="127" height="89" alt="Перфоратор BOSCH BFG 3000">
                 <div class="product-item-hover">
-                  <a href="cart.html" class="buy">Купить</a>
+                  <a href="cart-form.html" class="buy">Купить</a>
                   <a href="bookmarks.html" class="bookmark">В закладки</a>
                 </div>
               </div>
@@ -156,7 +157,7 @@
               <div class="image-wrapper">
                 <img src="img/bfg-6000.jpg" width="144" height="83" alt="Перфоратор BOSCH BFG 6000">
                 <div class="product-item-hover">
-                  <a href="cart.html" class="buy">Купить</a>
+                  <a href="cart-form.html" class="buy">Купить</a>
                   <a href="bookmarks.html" class="bookmark">В закладки</a>
                 </div>
               </div>
@@ -168,7 +169,7 @@
               <div class="image-wrapper">
                 <img src="img/bfg-2000.jpg" width="127" height="89" alt="Перфоратор BOSCH BFG 2000">
                 <div class="product-item-hover">
-                  <a href="cart.html" class="buy">Купить</a>
+                  <a href="cart-form.html" class="buy">Купить</a>
                   <a href="bookmarks.html" class="bookmark">В закладки</a>
                 </div>
               </div>
@@ -179,40 +180,24 @@
           </div>
         </section>
         <section class="popular-vendors">
-          <div class="popular-vendors-title">
-            <span class="popular vendors">Популярные производители:</span>
+          <div class="popular-title clearfix">
+            <span class="popular">Популярные производители:</span>
             <a class="btn-red" href="#">Все производители</a>
           </div>
           <div class="popular-vendors-wrapper clearfix">
-            <div class="vendor-logo">
-              <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="BOSCH"></a>
-            </div>
-            <div class="vendor-logo">
-              <a href="#"><img src="img/makita.jpg" width="123" height="40" alt="MAKITA"></a>
-            </div>
-            <div class="vendor-logo">
-              <a href="#"><img src="img/dewalt.jpg" width="146" height="44" alt="DeWALT"></a>
-            </div>
-            <div class="vendor-logo">
-              <a href="#"><img src="img/interscol.jpg" width="184" height="32" alt="ИНТЕРСКОЛ"></a>
-            </div>
-            <div class="vendor-logo">
-              <a href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="HITACHI"></a>
-            </div>
-            <div class="vendor-logo">
-              <a href="#"><img src="img/lg.jpg" width="127" height="73" alt="LG"></a>
-            </div>
-            <div class="vendor-logo">
-              <a href="#"><img src="img/aeg.jpg" width="151" height="96" alt="AEG"></a>
-            </div>
-            <div class="vendor-logo">
-              <a href="#"><img src="img/metabo.jpg" width="204" height="69" alt="METABO"></a>
-            </div>
+              <a class="vendor-logo" href="#"><img src="img/bosch.jpg" width="126" height="37" alt="BOSCH"></a>
+              <a class="vendor-logo" href="#"><img src="img/makita.jpg" width="123" height="40" alt="MAKITA"></a>
+              <a class="vendor-logo" href="#"><img src="img/dewalt.jpg" width="146" height="44" alt="DeWALT"></a>
+              <a class="vendor-logo" href="#"><img src="img/interscol.jpg" width="184" height="32" alt="ИНТЕРСКОЛ"></a>
+              <a class="vendor-logo" href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="HITACHI"></a>
+              <a class="vendor-logo" href="#"><img src="img/lg.jpg" width="127" height="73" alt="LG"></a>
+              <a class="vendor-logo" href="#"><img src="img/aeg.jpg" width="151" height="96" alt="AEG"></a>
+              <a class="vendor-logo" href="#"><img src="img/metabo.jpg" width="204" height="69" alt="METABO"></a>
           </div>
         </section>
       </div>
       <section class="services">
-        <div class="container">
+        <div class="container clearfix">
           <div class="services-info">
             <span class="services-title">Сервисы</span>
             <p>Хороший интернет-магазин отличается от плохого не только ценами! <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -228,7 +213,7 @@
               </div>
               <div class="tab-content warranty-tab" id="warranty-tab">
                 <span class="services-tab-content-title">Гарантия</span>
-                <p>Если купленный у нас товар поломается или заискрит, <br>а  также в случае пожара, спровоцированного его возгоранием,<br>вы всегда можете быть уверены в нашей гарантиию. Мы обменяем <br> сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
+                <p>Если купленный у нас товар поломается или заискрит, <br>а  также в случае пожара, спровоцированного его возгоранием,<br>вы всегда можете быть уверены в нашей гарантиию. Мы обменяем <br> сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами. </p>
               </div>
               <div class="tab-content credit-tab" id="credit-tab">
                 <span class="services-tab-content-title">Kредит</span>
@@ -258,11 +243,11 @@
           </div>
           <div class="contacts">
             <span class="contacts-title">Контакты</span>
-            <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+            <p>Вы можете забрать товар сами,<br> заехав в наш офис: </p>
             <div class="map">
-              <a href="contacts.html" class="interactive-map"><img src="img/map-small.jpg" width="300" height="158" alt="карта проезда"></a>
+              <a href="https://goo.gl/maps/VBxNVcvYrDB2" class="interactive-map"><img src="img/map-small.jpg" width="300" height="158" alt="карта проезда"></a>
             </div>
-            <a href="contacts.html" class="feedback-btn btn-red">Заблудились? Напишите нам!</a>
+            <a href="feedback-form.html" class="feedback-btn btn-red">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </section>
@@ -291,7 +276,7 @@
     </div>
     <div class="cart-wrapper close-wrapper clearfix">
       <span class="cart-wrapper-title">Товар добавлен в корзину!</span>
-      <div class="button-area">
+      <div class="button-area clearfix">
         <a href="#" class="cart-wrapper-btn btn-red">Офомить заказ</a>
         <a href="#" class="item-in-cart">Продолжить покупки</a>
       </div>
@@ -328,7 +313,7 @@
           <div class="copyright">
               © 2010–2016 Компания «Техномарт»<br>Все права защищены
           </div>
-          <div class="social">
+          <div class="social clearfix">
             <a href="http://www.vk.com" class="btn vk-btn"></a>
             <a href="http://www.facebook.com" class="btn fb-btn"></a>
             <a href="http://www.instagram.com" class="btn inst-btn"></a>
@@ -344,6 +329,6 @@
         </div>
       </section>
     </footer>
-    <script src="js/min-script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
