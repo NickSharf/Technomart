@@ -1137,6 +1137,7 @@ main .breadcrumbs {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .filter-form button:hover {
