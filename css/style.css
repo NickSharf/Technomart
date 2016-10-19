@@ -137,7 +137,6 @@ header {
   font-size: 17px;
   font-family: "Cuprum", "Arial", "serif";
   color: #ffffff;
-  height: 42px;
 }
 
 .search-block input:hover, .search-block label:hover, .header-bookmarks:hover, .header-cart:hover {
