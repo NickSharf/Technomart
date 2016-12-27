@@ -1969,7 +1969,7 @@ input[value="credit"]:checked ~ .services-tabs-description .credit-tab {
 }
 
 .cart-wrapper .item-in-cart:active{
-  background-color: #000000;
+  color: #000000;
   color: rgba(0, 0, 0, 0.3);
 }
 
