@@ -503,7 +503,7 @@ main .container {
   position: relative;
   display: block;
   width: 300px;
-  min-height: 123px;
+  height: 123px;
 }
 
 .category-box:not(:last-of-type) {
