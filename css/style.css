@@ -451,24 +451,35 @@ header {
 .header-navigation a {
   display: block;
   float: left;
-  width: 134px;
   text-decoration: none;
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
   padding-top: 20px;
   padding-bottom: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
   box-shadow: 0 5px 0 #293449;
   margin-bottom: 5px;
   background-color: #32425c;
 }
 
+.header-navigation a:first-child {
+  padding-left: 52px;
+  padding-right: 32px;
+}
+
+.header-navigation a:last-child {
+  padding-right: 56px;
+  padding-left: 32px;
+}
+
 .header-navigation a:hover {
   background-color: #293449;
 }
 
-.header-navigation a:active, .menu-current {
+.header-navigation a:active, a.menu-current {
   color: #ffffff;
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
