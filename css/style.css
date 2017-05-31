@@ -460,8 +460,7 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  box-shadow: 0 5px 0 #293449;
-  margin-bottom: 5px;
+  border-bottom: solid 5px #293449;
   background-color: #32425c;
 }
 
@@ -483,7 +482,7 @@ header {
   color: #ffffff;
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
-  box-shadow: 0 5px 0 #1d2739;
+  border-bottom: solid 5px #1d2739;
 }
 
 main .container {
