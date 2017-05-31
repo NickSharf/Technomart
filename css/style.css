@@ -445,19 +445,12 @@ header {
 }
 
 .header-navigation {
-  min-height: 120px;
-}
-
-.header-navigation .container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  min-height: 55px;
+  margin-bottom: 59px;
 }
 
 .header-navigation a {
   display: block;
+  float: left;
   width: 134px;
   text-decoration: none;
   color: #ffffff;
@@ -467,7 +460,7 @@ header {
   padding-bottom: 18px;
   text-align: center;
   box-shadow: 0 5px 0 #293449;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   background-color: #32425c;
 }
 
